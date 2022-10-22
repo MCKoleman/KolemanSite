@@ -12,8 +12,8 @@ export default function SkillsPage() {
             Skills &amp; Technologies
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            I've worked with many more tools, technologies, and languages than I feel comfortable listing here.
-            These are some of my strongest skills that I believe I can use in a professional capacity.
+            I've worked with many more tools, technologies, and languages than I can cleanly list here.<br/>
+            These are some of my strongest skills that I am able to use in a professional capacity.
           </p>
         </li>
         <li className="flex flex-wrap lg:w-4/6 sm:mx-auto sm:mb-2 -mx-2">

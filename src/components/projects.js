@@ -20,7 +20,7 @@ export default function ProjectsPage() {
             <a href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-3">
-              <div className="flex relative">
+              <div className="flex relative min-h-full">
                 <img alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
                   src={project.image}
@@ -33,9 +33,6 @@ export default function ProjectsPage() {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
-                  <p className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                      {project.tools.join(", ").toString()}
-                  </p>
                 </div>
               </div>
             </a>
