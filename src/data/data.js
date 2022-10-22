@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "OpenGL, C++",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./images/BBBCover.png",
+    image: "./images/rayTracer.gif",
     link: "https://github.com/MCKoleman/RayTracer",
     tools: [
       "C++",
@@ -16,7 +16,7 @@ export const projects = [
     subtitle: "OpenGL, C++",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./images/BBBCover.png",
+    image: "./images/openModeler.gif",
     link: "https://github.com/MCKoleman/OpenModeler",
     tools: [
       "C++",
@@ -28,7 +28,7 @@ export const projects = [
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./images/BBBCover.png",
+    image: "./images/studiokoleman.gif",
     link: "https://studiokoleman.com/",
     tools: [
       "JavaScript",
@@ -41,7 +41,7 @@ export const projects = [
     subtitle: "MERN Stack",
     description:
       "This project you've already seen as you're currently using it! I created this website using NodeJS and React with TailwindCSS. I also hosted the website using the Firebase CLI and CloudFlare.",
-    image: "./images/BBBCover.png",
+    image: "./images/kolemanSite.gif",
     link: "https://koleman.dev/",
     tools: [
       "JavaScript",
@@ -54,7 +54,7 @@ export const projects = [
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./images/BBBCover.png",
+    image: "./images/gwc.gif",
     link: "http://girlswhocodegainesville.com/",
     tools: [
       "JavaScript",
@@ -129,7 +129,7 @@ export const games = [
     title: "Forever After Death",
     subtitle: "Lead Programmer, Procedural Engineer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Created a 2D procedurally generated dungeon crawler in 48 hours with a team of 4 people. Winner of the \"Best UI/UX Design\" category for the MayDay 1.0 game jam.",
     image: "./images/ForeverAfterDeathCover.png",
     link: "https://mckoleman.itch.io/forever-after-death",
     tools: [
@@ -141,7 +141,7 @@ export const games = [
     title: "Buckethead 2: The Saint of Paint",
     subtitle: "Lead Programmer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Created a 2D action platformer in 48 hours with a team of 5 people. Winner of the \"Most Innovative Gameplay\" category for the Gator Game Jam 2021.",
     image: "./images/Buckethead2Cover.png",
     link: "https://mckoleman.itch.io/buckethead-2-the-saint-of-paint",
     tools: [

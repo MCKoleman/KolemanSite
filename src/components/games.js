@@ -34,7 +34,7 @@ export default function GamesPage() {
                                     {game.title}
                                 </h1>
                                 <p className="leading-relaxed">{game.description}</p>
-                                <p className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                                <p className="tracking-widest text-sm title-font font-medium text-green-400 mt-1">
                                     {game.tools.join(", ").toString()}
                                 </p>
                             </div>
