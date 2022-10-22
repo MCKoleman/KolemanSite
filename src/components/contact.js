@@ -72,7 +72,7 @@ export default function Contact() {
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
-            If you would be interested with working with me or would like to reach out to me for any reason,
+            If you would be interested in working with me or would like to reach out to me for any reason,
             feel free to contact me through this form.
           </p>
           <div className="relative mb-4">
