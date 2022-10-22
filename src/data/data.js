@@ -173,5 +173,10 @@ export const socials = [
     title: "LinkedIn",
     image: "./images/linkedInLogo.png",
     link: "https://www.linkedin.com/in/manukolehmainen/"
+  },
+  {
+    title: "Discord",
+    image: "./images/discordLogo.png",
+    link: "https://discordapp.com/users/MCKoleman#1952"
   }
 ];
