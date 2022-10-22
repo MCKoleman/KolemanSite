@@ -6,7 +6,6 @@ import Contact from './components/contact.js';
 import ProjectsPage from './components/projects.js';
 import GamesPage from './components/games';
 import SkillsPage from './components/skills.js';
-import Socials from './components/socials.js';
 
 function App() {
   return (

@@ -11,7 +11,9 @@ export default function AboutPage() {
             I am currently a student at the University of Florida, graduating in December of 2023 with a Bachelor of Science in Computer Science 
             with a minor in Digital Arts & Sciences (UF's game development minor).<br/>
             <br/>
-            I am also the CEO and founder of Studio Koleman LLC, an indie game development company that I founded during college to turn my passion of
+            I am also the CEO and founder of <a href="https://studiokoleman.com" className="text-green hover:text-white">
+              Studio Koleman LLC,
+            </a> an indie game development company that I founded during college to turn my passion of
             making games into more than just a hobby. 
             Since officially transitioning from a sole propietorship into an LLC in August 2022, I have grown the company to be over 20
             contract employees working on 4 different projects that will be releasing gradually over the course of the next 1.5 years.<br/>
