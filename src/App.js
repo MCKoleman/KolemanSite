@@ -1,21 +1,21 @@
-import './App.css';
 import React from 'react';
 import Navbar from './components/navbar.js';
 
-import About from './components/about.js';
+import AboutPage from './components/about.js';
 import Contact from './components/contact.js';
-import Projects from './components/projects.js';
-import Skills from './components/skills.js';
-import Testimonials from './components/testimonials.js';
+import ProjectsPage from './components/projects.js';
+import GamesPage from './components/games';
+import SkillsPage from './components/skills.js';
+import Socials from './components/socials.js';
 
 function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
       <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Testimonials />
+      <AboutPage />
+      <ProjectsPage />
+      <GamesPage />
+      <SkillsPage />
       <Contact />
     </main>
   );
