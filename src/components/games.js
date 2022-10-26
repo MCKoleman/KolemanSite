@@ -5,8 +5,8 @@ import { games } from "../data/data.js";
 export default function GamesPage() {
   return (
     <section id="games" className="text-gray-400 bg-gray-900 body-font">
-        <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-            <div className="flex flex-col w-full mb-20">
+        <ul className="container px-5 py-10 mx-auto text-center lg:px-40">
+            <li className="flex flex-col w-full mb-20">
                 <ComputerDesktopIcon className="mx-auto inline-block w-10 mb-4" />
                 <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
                     Games I've Made
@@ -15,8 +15,8 @@ export default function GamesPage() {
                     Here are some of the more recent games that I've developed.
                     Some of these games were for school, others were for work, and others were simply fun personal projects.
                 </p>
-            </div>
-            <div className="flex flex-wrap -m-4">
+            </li>
+            <li className="flex flex-wrap -m-4">
                 {games.map((game) => (
                     <a href={game.link}
                         key={game.image}
@@ -49,8 +49,8 @@ export default function GamesPage() {
                         </div>
                     </a>
                 ))}
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
   );
 }

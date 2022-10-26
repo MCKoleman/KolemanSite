@@ -29,12 +29,14 @@ export default function Contact() {
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex md:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 w-full bg-gray-900 rounded-lg overflow-hidden md:mr-10 p-10 flex items-end justify-start relative">
-          <img alt="Contact Background"
-            width="100%"
-            height="100%"
-            className="sm:block hidden border-4 border-gray-800 bg-gray-900 rounded-xl absolute inset-0 w-full"
-            src={contactBG}/>
-          <div className="grid grid-cols-2 grid-rows-1 bg-gray-900 xl:w-2/3 w-full relative py-6 rounded-lg shadow-lg">
+          <a href="#about">
+            <img alt="Contact Background"
+              width="100%"
+              height="100%"
+              className="sm:block hidden border-4 border-gray-800 bg-gray-900 rounded-xl absolute inset-0 w-full"
+              src={contactBG}/>
+          </a>
+          <div className="grid grid-cols-2 grid-rows-1 border-4 border-gray-800 bg-gray-900 xl:w-2/3 w-full relative py-6 rounded-lg shadow-lg">
             <ul className="grid grid-cols-1 sm:grid-rows-2 md:w-2/3 w-1/2 px-6 py-0 mt-4 flex justify-center items-center">
               <li className="w-full">
                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
