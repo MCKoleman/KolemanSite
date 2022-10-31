@@ -5,8 +5,8 @@ import { projects } from "../data/data";
 export default function ProjectsPage() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
+      <ul className="container px-5 py-10 mx-auto text-center lg:px-40">
+        <li className="flex flex-col w-full mb-20">
           <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
@@ -14,8 +14,8 @@ export default function ProjectsPage() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             From raytracers and calculators to websites and games, I've worked on both front-end and back-end programming extensively.
           </p>
-        </div>
-        <div className="flex flex-wrap -m-4">
+        </li>
+        <li className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a href={project.link}
               key={project.image}
@@ -37,8 +37,8 @@ export default function ProjectsPage() {
               </div>
             </a>
           ))}
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   );
 }
