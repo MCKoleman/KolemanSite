@@ -1,7 +1,7 @@
 import React from "react";
 import { email as contactEmail, github, githubLink, discord, discordLink, phone, contactBG } from "../data/contactInfo";
 
-export default function Contact() {
+export default function ContactSection() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");

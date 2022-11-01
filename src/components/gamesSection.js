@@ -2,7 +2,7 @@ import { ComputerDesktopIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { games } from "../data/data.js";
 
-export default function GamesPage() {
+export default function GamesSection() {
   return (
     <section id="games" className="text-gray-400 bg-gray-900 body-font">
         <ul className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -18,7 +18,7 @@ export default function GamesPage() {
             </li>
             <li className="flex flex-wrap -m-4">
                 {games.map((game) => (
-                    <a href={game.link}
+                    <a href={"/projects/" + game.id}
                         key={game.image}
                         className="sm:w-1/2 w-100 p-3">
                         <div className="flex relative min-h-full">

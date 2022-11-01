@@ -2,7 +2,7 @@ import { CheckBadgeIcon, CpuChipIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { skills } from "../data/data";
 
-export default function SkillsPage() {
+export default function SkillsSection() {
   return (
     <section id="skills">
       <ul className="container px-5 py-10 mx-auto">

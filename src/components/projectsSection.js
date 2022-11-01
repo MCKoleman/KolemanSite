@@ -2,7 +2,7 @@ import { CodeBracketIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { projects } from "../data/data";
 
-export default function ProjectsPage() {
+export default function ProjectsSection() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <ul className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         </li>
         <li className="flex flex-wrap -m-4">
           {projects.map((project) => (
-            <a href={project.link}
+            <a href={"/projects/" + project.id}
               key={project.image}
               className="sm:w-1/2 w-100 p-3">
               <div className="flex relative min-h-full">
