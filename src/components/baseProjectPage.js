@@ -27,7 +27,7 @@ export default function BaseProjectPage(props) {
     }
 
     return (
-        <div className="container mx-auto flex h-screen py-20 mb-20 flex-col items-center">
+        <div className="container mx-auto flex min-h-screen py-20 mb-20 flex-col items-center">
             <div className="d-block w-full text-white">
                 <div className="flow-root">
                     <div className="absolute inline-flex w-full h-fit">
@@ -80,7 +80,7 @@ export default function BaseProjectPage(props) {
                         className="relative w-1/2 h-full object-cover object-center hover:shadow-2xl">
                         <img alt="projectGif"
                             className="w-full rounded-xl"
-                            src={props.project.gif ? props.project.gif : props.project.image}
+                            src={props.project.gif}
                         />
                     </a>
                 </div>
@@ -94,6 +94,11 @@ export default function BaseProjectPage(props) {
                         className="bg-gray-900 border-0 py-4 px-7 bg-cyan-900 focus:outline-none hover:bg-cyan-700 rounded text-base hover:text-xl mt-4 md:mt-0">
                         Link to project
                     </a>
+                </div>
+                <div className="flex justify-center align-centr mb-10">
+                    <p>
+
+                    </p>
                 </div>
             </div>
         </div>

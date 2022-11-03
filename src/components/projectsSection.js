@@ -18,12 +18,12 @@ export default function ProjectsSection() {
         <li className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a href={"/projects/" + project.id}
-              key={project.image}
+              key={project.gif}
               className="sm:w-1/2 w-100 p-3">
               <div className="flex relative min-h-full">
                 <img alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
-                  src={project.image}
+                  src={project.gif}
                 />
                 <div className="px-8 py-20 relative z-10 w-full border-4 border-gray-800 bg-gray-900 rounded-xl opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
