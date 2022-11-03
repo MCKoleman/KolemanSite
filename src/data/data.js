@@ -5,8 +5,15 @@ export const projects = [
     subtitle: "C++, OpenGL",
     description:
       "Created a simple raytracing program using only the OpenGL library and C++. The program allows rendering a 3D scene with raytraced lighting, shadows, and reflections from any camera angle.",
+    gif: "/gifs/rayTracer.gif",
     image: "/gifs/rayTracer.gif",
     link: "https://github.com/MCKoleman/RayTracer",
+    body: [
+      "",
+    ],
+    code: [
+      "",
+    ],
   },
   {
     id: "openmodeler",
@@ -14,6 +21,7 @@ export const projects = [
     subtitle: "C++, OpenGL",
     description:
       "Created a 3D modeling program using only the OpenGL library and C++. The program allows rendering of any .obj file and allows the user to make changes to the model's transformations and to the individual triangles and vertices of the mesh.",
+    gif: "/gifs/openModeler.gif",
     image: "/gifs/openModeler.gif",
     link: "https://github.com/MCKoleman/OpenModeler",
   },
@@ -23,6 +31,7 @@ export const projects = [
     subtitle: "Wix",
     description:
       "Completely revamped and redesigned the website for an annual Christian conference. Created both a desktop and mobile view using Wix.",
+    gif: "/gifs/lifeImpact.gif",
     image: "/gifs/lifeImpact.gif",
     link: "https://www.lifeimpacteast.org/",
   },
@@ -32,6 +41,7 @@ export const projects = [
     subtitle: "JavaScript, MERN Stack",
     description:
       "Created the website for my company, Studio Koleman. I also made a built-in WebGL player to play games made by the company directly on the website.",
+    gif: "/gifs/studioKoleman.gif",
     image: "/gifs/studioKoleman.gif",
     link: "https://studiokoleman.com/",
   },
@@ -41,6 +51,7 @@ export const projects = [
     subtitle: "JavaScript, MERN Stack",
     description:
       "Created the website you are currently using! The website website was made using NodeJS and React with TailwindCSS. I also hosted the website using the Firebase CLI and CloudFlare.",
+    gif: "/gifs/kolemanSite.gif",
     image: "/gifs/kolemanSite.gif",
     link: "https://koleman.dev/",
   },
@@ -50,6 +61,7 @@ export const projects = [
     subtitle: "JavaScript, MERN Stack",
     description:
       "Created the website for the UF branch of Girls Who Code. The website has an admin dashboard that allows admins to manage database operations or to make changes to the live website directly without touching any code.",
+    gif: "/gifs/gwc.gif",
     image: "/gifs/gwc.gif",
     link: "http://girlswhocodegainesville.com/",
   },
