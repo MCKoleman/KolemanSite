@@ -3,6 +3,7 @@ import ProjectsSection from './projectsSection.js';
 import GamesSection from './gamesSection.js';
 import SkillsSection from './skillsSection.js';
 import AboutSection from './aboutSection.js';
+import ClassesSection from './classesSection.js';
 
 export default function HomePage() {
     return (
@@ -11,6 +12,7 @@ export default function HomePage() {
             <ProjectsSection/>
             <GamesSection/>
             <SkillsSection/>
+            <ClassesSection/>
         </div>
     );
 }

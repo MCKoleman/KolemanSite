@@ -180,6 +180,49 @@ export const skills = [
   "Project Management",
 ];
 
+export const courses = [
+  {
+    id: "COP 4600",
+    title: "Operating Systems",
+  },
+  {
+    id: "CAP 4730",
+    title: "Computational Structures in Computer Graphics",
+  },
+  {
+    id: "COP 3530",
+    title: "Data Structures & Algorithms",
+  },
+  {
+    id: "CEN 3031",
+    title: "Intro to Software Engineering",
+  },
+  {
+    id: "MAS 3114",
+    title: "Computational Linear Algebra",
+  },
+  {
+    id: "COP 4020",
+    title: "Programming Language Concepts",
+  },
+  {
+    id: "DIG 4527C",
+    title: "Game Design & Production",
+  },
+  {
+    id: "DIG 3715",
+    title: "Game Content Production 2",
+  },
+  {
+    id: "DIG 3713",
+    title: "Game Content Production 1",
+  },
+  {
+    id: "DIG 2632",
+    title: "Creating Mobile Games",
+  },
+];
+
 export const socials = [
   {
     title: "GitHub",
