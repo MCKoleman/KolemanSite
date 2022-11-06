@@ -43,6 +43,19 @@ export const projects = [
 
 export const games = [
   {
+    title: "Pantry Panic",
+    subtitle: "Lead Engineer",
+    description:
+      "[WIP] Currently leading development of a 2D fantasy action roguelite cooking game. Created a procedural generation system with tools for game designers to build levels.",
+    image: "./images/PantryPanicCover.png",
+    gif: "./gifs/pantryPanic.gif",
+    link: "https://mckoleman.itch.io/pantry-panic",
+    tools: [
+      "C#",
+      "Unity"
+    ],
+  },
+  {
     title: "Bars, Barns, & Bartering",
     subtitle: "Lead Programmer",
     description:

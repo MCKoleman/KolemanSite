@@ -1,21 +1,43 @@
 import React from 'react';
-import Navbar from './components/navbar.js';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ScrollToTop from './utils/scrollToTop.js';
 
-import AboutPage from './components/about.js';
-import Contact from './components/contact.js';
-import ProjectsPage from './components/projects.js';
-import GamesPage from './components/games';
-import SkillsPage from './components/skills.js';
+import Navbar from './components/navbar.js';
+import Footer from './components/footer.js';
+import HomePage from './pages/homePage.js';
+import GamesPage from './components/games.js';
 
 function App() {
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  });
+
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      });
+    }
+    
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+  });
+  
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
-      <Navbar />
-      <AboutPage />
-      <ProjectsPage />
-      <GamesPage />
-      <SkillsPage />
-      <Contact />
+      <Router>
+        <ScrollToTop />
+        <Navbar />
+        <div>
+          <Route exact path = "/" component={HomePage}/>
+          <Route exact path = "/games" component={GamesPage}/>
+        </div>
+      </Router>
     </main>
   );
 }
