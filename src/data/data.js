@@ -198,42 +198,52 @@ export const courses = [
   {
     id: "COP 4600",
     title: "Operating Systems",
+    description: "",
   },
   {
     id: "CAP 4730",
     title: "Computational Structures in Computer Graphics",
+    description: "",
   },
   {
     id: "COP 3530",
     title: "Data Structures & Algorithms",
+    description: "",
   },
   {
     id: "CEN 3031",
     title: "Intro to Software Engineering",
+    description: "",
   },
   {
     id: "MAS 3114",
     title: "Computational Linear Algebra",
+    description: "",
   },
   {
     id: "COP 4020",
     title: "Programming Language Concepts",
+    description: "",
   },
   {
     id: "DIG 4527C",
     title: "Game Design & Production",
+    description: "",
   },
   {
     id: "DIG 3715",
     title: "Game Content Production 2",
+    description: "",
   },
   {
     id: "DIG 3713",
     title: "Game Content Production 1",
+    description: "",
   },
   {
     id: "DIG 2632",
     title: "Creating Mobile Games",
+    description: "",
   },
 ];
 

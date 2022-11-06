@@ -1,9 +1,10 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar.js';
-import ScrollToTop from './utils/scrollToTop.js';
 
 import Footer from './components/footer.js';
-import HomePage from './pages/homePage.js';
+import ContactSection from './components/contactSection.js';
+import HomePage from './components/homePage.js';
 import ProjectsPage from './components/projectsPage.js';
 import ProjectHome from './components/projectHome.js';
 
@@ -31,7 +32,6 @@ function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
       <BrowserRouter>
-        <ScrollToTop />
         <Navbar />  
         <Routes>
           <Route path="/projects/:id" element={<ProjectsPage/>}/>
