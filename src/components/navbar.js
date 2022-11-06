@@ -24,12 +24,12 @@ export default function Navbar() {
         </nav>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
             {socials.map((social) => (
-                <a href={social.link} key={social.title} className="mr-5">
-                    <img alt={social.title}
-                        className="h-8 object-center"
-                        src={social.image}
-                        />
-                </a>
+              <a href={social.link} key={social.title} className="mr-5">
+                  <img alt={social.title}
+                      className="h-8 object-center"
+                      src={social.image}
+                      />
+              </a>
             ))}
         </nav>
         <a href="#contact"

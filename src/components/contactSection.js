@@ -1,7 +1,7 @@
 import React from "react";
 import { email as contactEmail, github, githubLink, discord, discordLink, phone, contactBG } from "../data/contactInfo";
 
-export default function ContactPage() {
+export default function ContactSection() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
@@ -29,7 +29,7 @@ export default function ContactPage() {
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex md:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 w-full bg-gray-900 rounded-lg overflow-hidden md:mr-10 p-10 flex items-end justify-start relative">
-          <a href="#about">
+          <a href="/#about">
             <img alt="Contact Background"
               width="100%"
               height="100%"

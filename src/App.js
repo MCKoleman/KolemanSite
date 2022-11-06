@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/navbar.js';
 import ScrollToTop from './utils/scrollToTop.js';
 
-import Navbar from './components/navbar.js';
 import Footer from './components/footer.js';
 import HomePage from './pages/homePage.js';
-import GamesPage from './components/games.js';
+import ProjectsPage from './components/projectsPage.js';
+import ProjectHome from './components/projectHome.js';
 
 function App() {
   const [dimensions, setDimensions] = React.useState({
@@ -30,14 +30,16 @@ function App() {
   
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
-      <Router>
+      <BrowserRouter>
         <ScrollToTop />
-        <Navbar />
-        <div>
-          <Route exact path = "/" component={HomePage}/>
-          <Route exact path = "/games" component={GamesPage}/>
-        </div>
-      </Router>
+        <Navbar />  
+        <Routes>
+          <Route path="/projects/:id" element={<ProjectsPage/>}/>
+          <Route exact path="/projects" element={<ProjectHome/>}/>
+          <Route exact path="/" element={<HomePage/>}/>
+        </Routes>
+        <ContactSection />
+      </BrowserRouter>
     </main>
   );
 }

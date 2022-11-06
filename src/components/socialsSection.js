@@ -1,4 +1,4 @@
-export default function Socials() {
+export default function SocialsSection() {
     return (
       <section id="socials">
         <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
