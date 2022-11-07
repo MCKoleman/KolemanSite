@@ -198,52 +198,52 @@ export const courses = [
   {
     id: "COP 4600",
     title: "Operating Systems",
-    description: "",
+    description: "Modification of a custom OS kernel in C. Learned",
   },
   {
     id: "CAP 4730",
     title: "Computational Structures in Computer Graphics",
-    description: "",
+    description: "C++ programming for graphics with OpenGL and HLSL/GLSL. Learned how to program custom lighting, rendering, and raytracing programs.",
   },
   {
     id: "COP 3530",
     title: "Data Structures & Algorithms",
-    description: "",
+    description: "Custom implementation of various data structures and sorting/pathing algorithms in C++. Learned",
   },
   {
     id: "CEN 3031",
     title: "Intro to Software Engineering",
-    description: "",
+    description: "Creation of a complete software product to meet customer specifications in JavaScript and MERN. Learned",
   },
   {
     id: "MAS 3114",
     title: "Computational Linear Algebra",
-    description: "",
+    description: "Vector and matrix math with MATLAB. Learned",
   },
   {
     id: "COP 4020",
     title: "Programming Language Concepts",
-    description: "",
+    description: "Creation of a custom programming language using Java. Learned",
   },
   {
     id: "DIG 4527C",
     title: "Game Design & Production",
-    description: "",
+    description: "2D game development in a team of 25 in Unity and C#. Learned project management, ",
   },
   {
     id: "DIG 3715",
     title: "Game Content Production 2",
-    description: "",
+    description: "3D game development in a team of 7 in Unity and C#. Learned team management, 3D production, and procedural room generation.",
   },
   {
     id: "DIG 3713",
     title: "Game Content Production 1",
-    description: "",
+    description: "2D game development in Unity and C#. Learned post-processing, level design, and the mechanics of fun.",
   },
   {
     id: "DIG 2632",
     title: "Creating Mobile Games",
-    description: "",
+    description: "2D game development in Unity and C#. Learned principles of rapid prototyping, scripting, and rendering.",
   },
 ];
 
