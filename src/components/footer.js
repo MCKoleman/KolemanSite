@@ -1,6 +1,4 @@
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { socials } from "../data/data.js";
 
 export default function Footer() {
   return (
