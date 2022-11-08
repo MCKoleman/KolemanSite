@@ -23,8 +23,8 @@ export default function ClassesSection() {
               <div className="bg-gray-800 rounded flex p-4 h-full items-center">
                 <BookOpenIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="title-font font-medium text-white">
-                  {course.id}<br/>
-                  {course.title}
+                  {course.id} - {course.title}<br/>
+                  <p className="mt-1">{course.description}</p>
                 </span>
               </div>
             </div>

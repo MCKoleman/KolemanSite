@@ -69,6 +69,20 @@ export const projects = [
 
 export const games = [
   {
+    id: "pantrypanic",
+    title: "Pantry Panic",
+    subtitle: "Lead Engineer",
+    description:
+      "[WIP] Currently leading development of a 2D fantasy action roguelite cooking game. Created a procedural generation system with tools for game designers to build levels.",
+    image: "./images/PantryPanicCover.png",
+    gif: "./gifs/pantryPanic.gif",
+    link: "https://mckoleman.itch.io/pantry-panic",
+    tools: [
+      "C#",
+      "Unity"
+    ],
+  },
+  {
     id: "bbb",
     title: "Bars, Barns, & Bartering",
     subtitle: "Lead Programmer",
@@ -184,42 +198,62 @@ export const courses = [
   {
     id: "COP 4600",
     title: "Operating Systems",
+    description: "Mutex, locks, OS principles and modification of a custom OS kernel in C.",
+    learned: "Learned ",
   },
   {
     id: "CAP 4730",
     title: "Computational Structures in Computer Graphics",
+    description: "C++ programming for graphics with OpenGL and HLSL/GLSL.",
+    learned: "Learned how to program custom lighting, rendering, and raytracing programs.",
   },
   {
     id: "COP 3530",
     title: "Data Structures & Algorithms",
+    description: "Custom implementation of various data structures and sorting/pathing algorithms in C++.",
+    learned: "Learned ",
   },
   {
     id: "CEN 3031",
     title: "Intro to Software Engineering",
+    description: "Creation of a complete software product to meet customer specifications in JavaScript and MERN.",
+    learned: "Learned ",
   },
   {
     id: "MAS 3114",
     title: "Computational Linear Algebra",
+    description: "Vector and matrix math with MATLAB.",
+    learned: "Learned ",
   },
   {
     id: "COP 4020",
     title: "Programming Language Concepts",
+    description: "OOP, regex, and creation of a custom programming language using Java.",
+    learned: "Learned ",
   },
   {
     id: "DIG 4527C",
     title: "Game Design & Production",
+    description: "2D game development in a team of 25 in Unity and C#. ",
+    learned: "Learned project management, leadership",
   },
   {
     id: "DIG 3715",
     title: "Game Content Production 2",
+    description: "3D game development in a team of 7 in Unity and C#.",
+    learned: "Learned team management, 3D production, and procedural room generation.",
   },
   {
     id: "DIG 3713",
     title: "Game Content Production 1",
+    description: "2D game development in Unity and C#.",
+    learned: "Learned post-processing, level design, and the mechanics of fun.",
   },
   {
     id: "DIG 2632",
     title: "Creating Mobile Games",
+    description: "2D game development in Unity and C#.",
+    learned: "Learned principles of rapid prototyping, scripting, and rendering.",
   },
 ];
 

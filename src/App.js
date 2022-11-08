@@ -1,12 +1,34 @@
 import React from 'react';
-import { Routes, BrowserRouter, Route, useParams } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar.js';
-import HomePage from './components/homePage.js';
+
+import Footer from './components/footer.js';
 import ContactSection from './components/contactSection.js';
+import HomePage from './components/homePage.js';
 import ProjectsPage from './components/projectsPage.js';
 import ProjectHome from './components/projectHome.js';
 
 function App() {
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  });
+
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      });
+    }
+    
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+  });
+  
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
       <BrowserRouter>
