@@ -8,6 +8,7 @@ export const projects = [
     gif: "/gifs/rayTracer.gif",
     image: "/gifs/rayTracer.gif",
     link: "https://github.com/MCKoleman/RayTracer",
+    github: "https://github.com/MCKoleman/RayTracer",
     body: [
       "",
     ],
@@ -24,16 +25,7 @@ export const projects = [
     gif: "/gifs/openModeler.gif",
     image: "/gifs/openModeler.gif",
     link: "https://github.com/MCKoleman/OpenModeler",
-  },
-  {
-    id: "lifeimpact",
-    title: "Life Impact Conference Website",
-    subtitle: "Wix",
-    description:
-      "Completely revamped and redesigned the website for an annual Christian conference. Created both a desktop and mobile view using Wix.",
-    gif: "/gifs/lifeImpact.gif",
-    image: "/gifs/lifeImpact.gif",
-    link: "https://www.lifeimpacteast.org/",
+    github: "https://github.com/MCKoleman/OpenModeler",
   },
   {
     id: "studiokoleman",
@@ -44,6 +36,7 @@ export const projects = [
     gif: "/gifs/studioKoleman.gif",
     image: "/gifs/studioKoleman.gif",
     link: "https://studiokoleman.com/",
+    github: "",
   },
   {
     id: "koleman",
@@ -54,6 +47,7 @@ export const projects = [
     gif: "/gifs/kolemanSite.gif",
     image: "/gifs/kolemanSite.gif",
     link: "https://koleman.dev/",
+    github: "https://github.com/MCKoleman/KolemanSite",
   },
   {
     id: "gwc",
@@ -64,6 +58,18 @@ export const projects = [
     gif: "/gifs/gwc.gif",
     image: "/gifs/gwc.gif",
     link: "http://girlswhocodegainesville.com/",
+    github: "",
+  },
+  {
+    id: "lifeimpact",
+    title: "Life Impact Conference Website",
+    subtitle: "Wix",
+    description:
+      "Completely revamped and redesigned the website for an annual Christian conference. Created both a desktop and mobile view using Wix.",
+    gif: "/gifs/lifeImpact.gif",
+    image: "/gifs/lifeImpact.gif",
+    link: "https://www.lifeimpacteast.org/",
+    github: "",
   },
 ];
 
@@ -77,6 +83,7 @@ export const games = [
     image: "./images/PantryPanicCover.png",
     gif: "./gifs/pantryPanic.gif",
     link: "https://mckoleman.itch.io/pantry-panic",
+    github: "https://github.com/DWIndieExperience/PantryPanic",
     tools: [
       "C#",
       "Unity"
@@ -91,6 +98,7 @@ export const games = [
     image: "/images/BBBCover.png",
     gif: "/gifs/bbb.gif",
     link: "https://studiokoleman.itch.io/bbb",
+    github: "https://github.com/StudioKolemanLLC/BBB",
     tools: [
       "C#",
       "Unity"
@@ -105,6 +113,7 @@ export const games = [
     image: "/images/HopshotCover.png",
     gif: "/gifs/hopshot.gif",
     link: "https://mckoleman.itch.io/hopshot",
+    github: "https://github.com/MCKoleman/Hopshot",
     tools: [
       "C#",
       "Unity"
@@ -119,6 +128,7 @@ export const games = [
     image: "/images/UniversicaCover.png",
     gif: "/gifs/universica.gif",
     link: "https://mckoleman.itch.io/universica",
+    github: "https://github.com/MCKoleman/Universica",
     tools: [
       "C#",
       "Unity"
@@ -133,6 +143,7 @@ export const games = [
     image: "/images/Buckethead4Cover.png",
     gif: "/gifs/buckethead4.gif",
     link: "https://mckoleman.itch.io/buckethead4",
+    github: "https://github.com/MCKoleman/Buckethead4",
     tools: [
       "C#",
       "Unity"
@@ -147,6 +158,7 @@ export const games = [
     image: "/images/SkywardCover.png",
     gif: "/gifs/skyward.gif",
     link: "https://mckoleman.itch.io/skyward",
+    github: "https://github.com/MCKoleman/Skyward",
     tools: [
       "C#",
       "Unity"
@@ -161,6 +173,7 @@ export const games = [
     image: "/images/ForeverAfterDeathCover.png",
     gif: "/gifs/foreverAfterDeath.gif",
     link: "https://mckoleman.itch.io/forever-after-death",
+    github: "https://github.com/MCKoleman/ForeverAfterDeath",
     tools: [
       "C#",
       "Unity"
@@ -175,6 +188,7 @@ export const games = [
     image: "/images/Buckethead2Cover.png",
     gif: "/gifs/buckethead2.gif",
     link: "https://mckoleman.itch.io/buckethead-2-the-saint-of-paint",
+    github: "https://github.com/MCKoleman/Buckethead2",
     tools: [
       "C#",
       "Unity"

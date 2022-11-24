@@ -18,7 +18,7 @@ export default function GamesSection() {
             </li>
             <li className="flex flex-wrap -m-4">
                 {games.map((game) => (
-                    <a href={"/projects/" + game.id}
+                    <a href={game.link /*"/projects/" + game.id*/}
                         key={game.image}
                         className="sm:w-1/2 w-100 p-3">
                         <div className="flex relative min-h-full">
@@ -45,6 +45,15 @@ export default function GamesSection() {
                                         </p>
                                     </div>
                                 </div>
+                                {(game.github && game.github !== "") ? (
+                                    <a href={game.github}
+                                    className="hover:opacity-60">
+                                    <img alt="github"
+                                        className="absolute inset-10 w-16 h-16"
+                                        src="/images/githubLogo.png"
+                                    />
+                                    </a>
+                                ) : (<></>)}
                             </div>
                         </div>
                     </a>

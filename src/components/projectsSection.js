@@ -17,7 +17,7 @@ export default function ProjectsSection() {
         </li>
         <li className="flex flex-wrap -m-4">
           {projects.map((project) => (
-            <a href={"/projects/" + project.id}
+            <a href={project.link /*"/projects/" + project.id*/}
               key={project.gif}
               className="sm:w-1/2 w-100 p-3">
               <div className="flex relative min-h-full">
@@ -33,6 +33,15 @@ export default function ProjectsSection() {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
+                  {(project.github && project.github !== "") ? (
+                    <a href={project.github}
+                      className="hover:opacity-60">
+                      <img alt="github"
+                        className="absolute inset-10 w-16 h-16"
+                        src="/images/githubLogo.png"
+                      />
+                    </a>
+                  ) : (<></>)}
                 </div>
               </div>
             </a>
