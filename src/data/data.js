@@ -36,7 +36,7 @@ export const projects = [
     gif: "/gifs/studioKoleman.gif",
     image: "/gifs/studioKoleman.gif",
     link: "https://studiokoleman.com/",
-    github: "",
+    github: "https://gitfront.io/r/MCKoleman/tJtZ1H48UXYj/StudioKolemanSite/",
   },
   {
     id: "koleman",
@@ -58,7 +58,7 @@ export const projects = [
     gif: "/gifs/gwc.gif",
     image: "/gifs/gwc.gif",
     link: "http://girlswhocodegainesville.com/",
-    github: "",
+    github: "https://gitfront.io/r/MCKoleman/L5kDezLaZewM/GWC/",
   },
   {
     id: "lifeimpact",
@@ -83,7 +83,7 @@ export const games = [
     image: "./images/PantryPanicCover.png",
     gif: "./gifs/pantryPanic.gif",
     link: "https://mckoleman.itch.io/pantry-panic",
-    github: "https://github.com/DWIndieExperience/PantryPanic",
+    github: "https://gitfront.io/r/MCKoleman/TsWntg2oczjo/PantryPanic/",
     tools: [
       "C#",
       "Unity"
@@ -98,7 +98,7 @@ export const games = [
     image: "/images/BBBCover.png",
     gif: "/gifs/bbb.gif",
     link: "https://studiokoleman.itch.io/bbb",
-    github: "https://github.com/StudioKolemanLLC/BBB",
+    github: "https://gitfront.io/r/MCKoleman/PWEz6XLt6P7Q/BBB/",
     tools: [
       "C#",
       "Unity"
@@ -128,7 +128,7 @@ export const games = [
     image: "/images/UniversicaCover.png",
     gif: "/gifs/universica.gif",
     link: "https://mckoleman.itch.io/universica",
-    github: "https://github.com/MCKoleman/Universica",
+    github: "https://gitfront.io/r/MCKoleman/EpbFLGtNQGox/Universica/",
     tools: [
       "C#",
       "Unity"
@@ -143,7 +143,7 @@ export const games = [
     image: "/images/Buckethead4Cover.png",
     gif: "/gifs/buckethead4.gif",
     link: "https://mckoleman.itch.io/buckethead4",
-    github: "https://github.com/MCKoleman/Buckethead4",
+    github: "https://gitfront.io/r/MCKoleman/pp8M4LSRwL1k/Buckethead4/",
     tools: [
       "C#",
       "Unity"
@@ -188,7 +188,7 @@ export const games = [
     image: "/images/Buckethead2Cover.png",
     gif: "/gifs/buckethead2.gif",
     link: "https://mckoleman.itch.io/buckethead-2-the-saint-of-paint",
-    github: "https://github.com/MCKoleman/Buckethead2",
+    github: "https://gitfront.io/r/MCKoleman/aisC2KHzeSJp/Buckethead2/",
     tools: [
       "C#",
       "Unity"
