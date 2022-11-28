@@ -4,7 +4,7 @@ import { email as contactEmail, github, githubLink, discord, discordLink, phone,
 export default function ContactSection() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [messageContent, setMessage] = React.useState("");
 
   function encode(data) {
     return Object.keys(data)
@@ -16,11 +16,21 @@ export default function ContactSection() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
+
+    //console.log(JSON.stringify({name, email, messageContent}));
+    fetch("https://us-central1-kolemansite.cloudfunctions.net/email", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+      mode: "no-cors",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({name, email, messageContent})
     })
+      .then((response) => {
+        console.log(response);
+      })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
   }

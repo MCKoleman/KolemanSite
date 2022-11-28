@@ -9,7 +9,7 @@ export default function AboutSection() {
           </h1>
           <p className="mb-8 leading-relaxed">
             I am currently a student at the University of Florida, graduating in December of 2023 with a Bachelor of Science in Computer Science 
-            and a minor in Digital Arts & Sciences (UF's game development minor).<br/>
+            and minors in Math and Digital Arts & Sciences (UF's game development minor).<br/>
             <br/>
             I am also the CEO and founder of <a href="https://studiokoleman.com" className="text-white hover:text-green-500">
               Studio Koleman LLC,

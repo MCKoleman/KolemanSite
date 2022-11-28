@@ -13,7 +13,19 @@
       }
     ]
   },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
   "extensions": {
-    "firestore-send-email": "firebase/firestore-send-email@0.1.19"
+    "firestore-send-email": "firebase/firestore-send-email@0.1.20"
   }
 }
