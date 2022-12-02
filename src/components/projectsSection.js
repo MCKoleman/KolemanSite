@@ -12,7 +12,7 @@ export default function ProjectsSection() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            From raytracers and calculators to websites and games, I've worked on both front-end and back-end programming extensively.
+            From raytracers and calculators to websites and games, I've worked on both front-end and back-end programming extensively. Hover over any project for a link to the source code!
           </p>
         </li>
         <li className="flex flex-wrap -m-4">

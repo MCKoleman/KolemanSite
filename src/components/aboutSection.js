@@ -8,14 +8,14 @@ export default function AboutSection() {
             <br className="hidden lg:inline-block" />I'm a software engineer and game developer
           </h1>
           <p className="mb-8 leading-relaxed">
-            I am currently a student at the University of Florida, graduating in December of 2023 with a Bachelor of Science in Computer Science 
+            I am currently a student at the University of Florida, graduating in December of 2023 with a BS in Computer Science 
             and minors in Math and Digital Arts & Sciences (UF's game development minor).<br/>
             <br/>
             I am also the CEO and founder of <a href="https://studiokoleman.com" className="text-white hover:text-green-500">
               Studio Koleman LLC,
             </a> an indie game development company that I founded during college to turn my passion of
             making games into more than just a hobby. 
-            Since officially transitioning from a sole propietorship into an LLC in August 2022, I have grown the company to be over 20
+            Since officially transitioning from a sole propietorship into an LLC in August 2022, I have grown the company to over 20
             contract employees working on 4 different projects that will be releasing gradually over the course of the next 1.5 years.<br/>
             <br/>
             Working at Studio Koleman has given me plenty of experience in leadership, project management, software engineering, web development,
@@ -32,6 +32,11 @@ export default function AboutSection() {
               href="#projects"
               className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
               See My Past Work
+            </a>
+            <a
+              href="https://mckoleman.itch.io"
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              Play My Games
             </a>
           </div>
         </div>

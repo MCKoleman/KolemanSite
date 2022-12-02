@@ -43,7 +43,7 @@ export const projects = [
     title: "Personal Website",
     subtitle: "JavaScript, MERN Stack",
     description:
-      "Created the website you are currently using! The website website was made using NodeJS and React with TailwindCSS. I also hosted the website using the Firebase CLI and CloudFlare.",
+      "Created the website you are currently using! The website was made using NodeJS and React with TailwindCSS. I also hosted the website using the Firebase CLI and CloudFlare.",
     gif: "/gifs/kolemanSite.gif",
     image: "/gifs/kolemanSite.gif",
     link: "https://koleman.dev/",
@@ -286,5 +286,10 @@ export const socials = [
     title: "Discord",
     image: "/images/discordLogo.png",
     link: "https://discordapp.com/users/MCKoleman#1952"
+  },
+  {
+    title: "itch.io",
+    image: "/images/itchioLogo.png",
+    link: "https://mckoleman.itch.io"
   }
 ];
