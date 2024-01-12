@@ -1,6 +1,6 @@
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { projects } from "../data/data";
+import { projects, featuredProject } from "../data/data";
 
 export default function ProjectsSection() {
   return (
@@ -16,38 +16,50 @@ export default function ProjectsSection() {
           </p>
         </li>
         <li className="flex flex-wrap -m-4">
+          <RenderProject project={featuredProject} fullWidth={true}/>
+        </li>
+        <li className="flex flex-wrap -m-4">
           {projects.map((project) => (
-            <a href={project.link /*"/projects/" + project.id*/}
-              key={project.gif}
-              className="sm:w-1/2 w-100 p-3">
-              <div className="flex relative min-h-full">
-                <img alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
-                  src={project.gif}
-                />
-                <div className="px-8 py-20 relative z-10 w-full border-4 border-gray-800 bg-gray-900 rounded-xl opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                  {(project.github && project.github !== "") ? (
-                    <a href={project.github}
-                      className="hover:opacity-60">
-                      <img alt="github"
-                        className="absolute inset-10 w-16 h-16"
-                        src="/images/githubLogo.png"
-                      />
-                    </a>
-                  ) : (<></>)}
-                </div>
-              </div>
-            </a>
+            <RenderProject project={project} fullWidth={false}/>
           ))}
         </li>
       </ul>
     </section>
+  );
+}
+
+function RenderProject(props)
+{
+  const project = props.project;
+  const className = props.fullWidth ? "sm:w-full w-100 p-3" : "sm:w-1/2 w-100 p-3";
+  return (
+    <a href={project.link /*"/projects/" + project.id*/}
+      key={project.gif}
+      className={className}>
+      <div className="flex relative min-h-full h-[400]">
+        <img alt="gallery"
+          className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+          src={project.gif}
+        />
+        <div className="px-8 py-20 relative z-10 w-full border-4 border-gray-800 bg-gray-900 rounded-xl opacity-0 hover:opacity-100">
+          <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+            {project.subtitle}
+          </h2>
+          <h1 className="title-font text-lg font-medium text-white mb-3">
+            {project.title}
+          </h1>
+          <p className="leading-relaxed">{project.description}</p>
+          {(project.github && project.github !== "") ? (
+            <a href={project.github}
+              className="hover:opacity-60">
+              <img alt="github"
+                className="absolute inset-10 w-16 h-16"
+                src="/images/githubLogo.png"
+              />
+            </a>
+          ) : (<></>)}
+        </div>
+      </div>
+    </a>
   );
 }

@@ -1,19 +1,22 @@
 export default function AboutSection() {
   return (
     <section id="about">
-      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Kristian.
-            <br className="hidden lg:inline-block" />I'm a software engineer and game developer
+            <br className="hidden lg:inline-block" />I'm a software engineer and game programmer
           </h1>
           <p className="mb-8 leading-relaxed">
             I am currently a student at the University of Florida, graduating in December of 2023 with a BS in Computer Science 
-            and minors in Math and Digital Arts & Sciences (UF's game development minor).<br/>
+            and minors in Math and Game Development.<br/>
             <br/>
+            I currently work as a software developer at <a href="https://lavavein.com/" className="text-white hover:text-green-500">
+              LavaVein
+            </a>, a UI/UX design and web devlopment company.<br/>
             I am also the CEO and founder of <a href="https://studiokoleman.com" className="text-white hover:text-green-500">
-              Studio Koleman LLC,
-            </a> an indie game development company that I founded during college to turn my passion of
+              Studio Koleman LLC
+            </a>, an indie game development company that I founded during college to turn my passion of
             making games into more than just a hobby. 
             Since officially transitioning from a sole propietorship into an LLC in August 2022, I have grown the company to over 20
             contract employees working on 4 different projects that will be releasing gradually over the course of the next 1.5 years.<br/>
@@ -36,7 +39,7 @@ export default function AboutSection() {
             <a
               href="https://mckoleman.itch.io"
               className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-              Play My Games
+              Play Games I've Made
             </a>
           </div>
         </div>
