@@ -5,9 +5,6 @@
   "targets": {},
   "etags": {
     "kolemansite": {
-      "extensionInstances": {
-        "firestore-send-email": "584851b5a2246fd489446443643291716f3071a85e5259b6e339ff375526b983"
-      }
     }
   }
 }
