@@ -8,22 +8,30 @@ export default function AboutSection() {
             <br className="hidden lg:inline-block" />I'm a software engineer and game programmer
           </h1>
           <p className="mb-8 leading-relaxed">
-            I am currently a student at the University of Florida, graduating in December of 2023 with a BS in Computer Science 
-            and minors in Math and Game Development.<br/>
-            <br/>
-            I currently work as a software developer at <a href="https://lavavein.com/" className="text-white hover:text-green-500">
+            I currently work as a full-stack software engineer at <a href="https://lavavein.com/" className="text-white hover:text-green-500">
               LavaVein
-            </a>, a UI/UX design and web devlopment company.<br/>
+            </a>, a UI/UX design and web development company.<br/>
+            <br/>
             I am also the CEO and founder of <a href="https://studiokoleman.com" className="text-white hover:text-green-500">
               Studio Koleman LLC
             </a>, an indie game development company that I founded during college to turn my passion of
             making games into more than just a hobby. 
-            Since officially transitioning from a sole propietorship into an LLC in August 2022, I have grown the company to over 20
-            contract employees working on 4 different projects that will be releasing gradually over the course of the next 1.5 years.<br/>
+            Since forming the company in August 2022, I have managed teams of 10+ people and I have worked on every part of the game development pipeline 
+            from prototyping new game ideas to designing and implementing the servers and databases our games run on.<br/>
             <br/>
-            Working at Studio Koleman has given me plenty of experience in leadership, project management, software engineering, web development,
-            gameplay programming, systems programming, and procedural generation programming. 
-            I hope to put these skills to use and refine them even more by working at a company with more experienced developers.
+            Working at Studio Koleman has given me experience in leadership, project management, software engineering, web development,
+            gameplay programming, publishing, database management, creating APIs, and server programming. 
+            I hope to keep using these skills and refining them more by working with senior developers who I can keep learning from.<br/>
+            <br/>
+            I earned my BS in <a href="https://catalog.ufl.edu/UGRD/colleges-schools/UGENG/CPS_BSCS/" className="text-white hover:text-green-500">
+              Computer Science
+            </a> with minors in <a href="https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/MAT_UMN/" className="text-white hover:text-green-500">
+              Math
+            </a> and <a href="https://catalog.ufl.edu/UGRD/colleges-schools/UGART/DAR_UMN/" className="text-white hover:text-green-500">
+              Game Development
+            </a> at the <a href="https://www.ufl.edu/" className="text-white hover:text-green-500">
+              University of Florida
+            </a>.<br/>
           </p>
           <div className="flex justify-center">
             <a

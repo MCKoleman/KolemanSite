@@ -15,10 +15,10 @@ export default function ProjectsSection() {
             From raytracers and calculators to websites and games, I've worked on both front-end and back-end programming extensively. Hover over any project for a link to the source code!
           </p>
         </li>
-        <li className="flex flex-wrap -m-4">
+        <li className="flex flex-wrap">
           <RenderProject project={featuredProject} fullWidth={true}/>
         </li>
-        <li className="flex flex-wrap -m-4">
+        <li className="flex flex-wrap">
           {projects.map((project) => (
             <RenderProject project={project} fullWidth={false}/>
           ))}
@@ -31,12 +31,12 @@ export default function ProjectsSection() {
 function RenderProject(props)
 {
   const project = props.project;
-  const className = props.fullWidth ? "sm:w-full w-100 p-3" : "sm:w-1/2 w-100 p-3";
+  const className = props.fullWidth ? "sm:w-full w-100 p-3 h-[650px]" : "sm:w-1/2 w-100 p-3 h-[300px]";
   return (
     <a href={project.link /*"/projects/" + project.id*/}
       key={project.gif}
       className={className}>
-      <div className="flex relative min-h-full h-[400]">
+      <div className="flex relative h-full">
         <img alt="gallery"
           className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
           src={project.gif}
@@ -48,7 +48,9 @@ function RenderProject(props)
           <h1 className="title-font text-lg font-medium text-white mb-3">
             {project.title}
           </h1>
-          <p className="leading-relaxed">{project.description}</p>
+          <div className="flex justify-center">
+            <p className="leading-relaxed max-w-[400px]">{project.description}</p>
+          </div>
           {(project.github && project.github !== "") ? (
             <a href={project.github}
               className="hover:opacity-60">

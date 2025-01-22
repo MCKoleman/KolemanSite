@@ -4,8 +4,8 @@ export const featuredProject = {
   subtitle: "C++, GLSL, OpenGL",
   description:
     "Created a free open-source 3D modeling and texturing application. Wrote high quality shaders, lighting and forward rendering systems, and the application core.",
-  gif: "/gifs/blankMat.gif",
-  image: "/gifs/blankMat.gif",
+  gif: "/gifs/blankmat.gif",
+  image: "/gifs/blankmat.gif",
   link: "https://github.com/BlankMat/BlankMat",
   github: "https://github.com/BlankMat/BlankMat",
 }
@@ -71,7 +71,7 @@ export const projects = [
     title: "Girls Who Code UF Website",
     subtitle: "JavaScript, React, NodeJS",
     description:
-      "Created the website for the UF branch of Girls Who Code. The website has an admin dashboard that allows admins to manage database operations or to make changes to the live website directly without touching any code.",
+      "Created the website for the UF branch of Girls Who Code. Created an admin dashboard that allows admins to manage the database or make changes to the live website directly from the website.",
     gif: "/gifs/gwc.gif",
     image: "/gifs/gwc.gif",
     link: "http://girlswhocodegainesville.com/",
@@ -83,9 +83,9 @@ export const games = [
   {
     id: "universica",
     title: "Universica",
-    subtitle: "Solo Developer",
+    subtitle: "Lead Programmer",
     description:
-      "Created a 2-player retro arcade space shooter in the style of Galaga. Worked as the only developer for 1.5 years. Published the game on Google Play in 2021.",
+      "Created a 2-player retro arcade space shooter. Worked as the only developer for 2 years, and with 10+ people over the next 2 years. Published the game on Google Play.",
     image: "/images/UniversicaCover.png",
     gif: "/gifs/universica.gif",
     link: "https://mckoleman.itch.io/universica",
@@ -98,7 +98,7 @@ export const games = [
   {
     id: "skyward",
     title: "Skyward",
-    subtitle: "Lead Programmer, Procedural Engineer",
+    subtitle: "Lead Programmer",
     description:
       "Created a 3D procedurally generated dungeon crawler in 5 months with a team of 7 people. Worked as project manager, lead programmer, and procedural engineer.",
     image: "/images/SkywardCover.png",
@@ -143,7 +143,7 @@ export const games = [
   {
     id: "hopshot",
     title: "Hopshot",
-    subtitle: "Lead Programmer, Procedural Engineer",
+    subtitle: "Lead Programmer",
     description:
       "Created a 2D procedurally generated puzzle platformer in 72 hours with a team of 4 people. Worked as project lead programmer, procedural engineer, and UI designer.",
     image: "/images/HopshotCover.png",
@@ -176,35 +176,47 @@ export const skills = [
   "C#",
   "C/C++",
   "Unity",
-  "Unreal Engine 4",
-  "JavaScript/TypeScript",
+  "Unreal Engine",
+  "JavaScript / TypeScript",
   "React",
   "Angular",
   "Python",
   "Git / GitHub",
   "Project Management",
   "Full-Stack Development",
-  "Databases",
+  "SQL / Postgres",
 ];
 
 export const programmingCourses = [
+  {
+    id: "CAP 4730",
+    title: "Programming Computer Graphics",
+    description: "C++ programming for graphics with OpenGL and GLSL.",
+    learned: "Learned shading models, 3D object rendering and manipulation, shader programming.",
+  },
+  {
+    id: "CIS 4301",
+    title: "Database Systems",
+    description: "Relational algebra, Database Management Systems, SQL, common SQL functions.",
+    learned: "Learned SQL and DBMS configuration.",
+  },
+  {
+    id: "COP 3530",
+    title: "Data Structures & Algorithms",
+    description: "Custom implementation of various data structures and sorting/pathing algorithms in C++.",
+    learned: "Learned how to create linked lists, stacks, queues, BSTs, ASTs, graphs, and implement BFS, DFS, Djikstra, and A* algorithms.",
+  },
+  {
+    id: "CNT 4007",
+    title: "Computer Networks",
+    description: "OSI architecture layers, clients and servers, network standards.",
+    learned: "Learned server design, TCP/UDP, IP.",
+  },
   {
     id: "COP 4600",
     title: "Operating Systems",
     description: "Mutex, locks, OS principles and modification of a custom OS kernel in C.",
     learned: "Learned C programming, ",
-  },
-  {
-    id: "CNT 4007",
-    title: "Computer Networks",
-    description: "_.",
-    learned: "Learned _",
-  },
-  {
-    id: "CAP 4730",
-    title: "Programming Computer Graphics",
-    description: "C++ programming for graphics with OpenGL and GLSL.",
-    learned: "Learned gouraud and phong shading and how to program custom lighting, rendering, and raytracing programs.",
   },
   {
     id: "COP 4020",
@@ -215,26 +227,14 @@ export const programmingCourses = [
   {
     id: "CEN 4721",
     title: "Human-Computer Interaction",
-    description: "_.",
-    learned: "Learned _.",
+    description: "Planning and design of human-computer interaction, interface design.",
+    learned: "Learned UI design, A/B testing.",
   },
   {
     id: "CIS 4360",
     title: "Computer and Information Security",
-    description: "_.",
+    description: "Threat and risk assessment, programmed threats, security policies, cryptography.",
     learned: "Learned cryptography, MD5, SHA-256.",
-  },
-  {
-    id: "CIS 4301",
-    title: "Database Systems",
-    description: "_.",
-    learned: "Learned SQL.",
-  },
-  {
-    id: "COP 3530",
-    title: "Data Structures & Algorithms",
-    description: "Custom implementation of various data structures and sorting/pathing algorithms in C++.",
-    learned: "Learned how to create linked lists, stacks, queues, BSTs, ASTs, graphs, and implement BFS, DFS, Djikstra, and A* algorithms.",
   },
   {
     id: "CEN 3031",
@@ -282,25 +282,25 @@ export const mathCourses = [
     id: "MAP 4305",
     title: "Systems of Differential Equations",
     description: "Systems of first and second order linear and nonlinear differential equations.",
-    learned: "Learned _.",
+    learned: "Learned systems of higher order differential equations.",
   },
   {
     id: "MAP 2302",
     title: "Elementary Differential Equations",
     description: "First order differential equations and Laplace transforms.",
-    learned: "Learned _.",
+    learned: "Learned first order differential equations.",
   },
   {
     id: "MAD 4401",
     title: "Numerical Analysis",
     description: "Numerical integration and interpolation of differential, linear, and nonlinear systems of equations.",
-    learned: "Learned _.",
+    learned: "Learned approximation of error and algorithms for evaluating non-trivial functions.",
   },
   {
     id: "MAC 2313",
     title: "Multivariable Calculus",
     description: "Solid analytic geometry, vectors, partial derivatives and multiple integrals.",
-    learned: "Learned _.",
+    learned: "Learned multivariable calculus.",
   },
 ];
 
@@ -316,13 +316,46 @@ export const socials = [
     link: "https://www.linkedin.com/in/manukolehmainen/"
   },
   {
-    title: "Discord",
-    image: "/images/discordLogo.png",
-    link: "https://discordapp.com/users/MCKoleman#1952"
-  },
-  {
     title: "itch.io",
     image: "/images/itchioLogo.png",
     link: "https://mckoleman.itch.io"
   }
 ];
+
+export const clients = [
+  {
+    title: "LavaVein",
+    image: "/images/clients/lavavein.png",
+    link: "https://lavavein.com/"
+  },
+  {
+    title: "Studio Koleman",
+    image: "/images/clients/studiokoleman.png",
+    link: "https://studiokoleman.com"
+  },
+  {
+    title: "Optym",
+    image: "/images/clients/optym.png",
+    link: "https://optym.com/truckload/loadai"
+  },
+  {
+    title: "Reddish & White",
+    image: "/images/clients/reddishandwhite.png",
+    link: "https://rw-application.web.app"
+  },
+  {
+    title: "Stonevault",
+    image: "/images/clients/stonevault.png",
+    link: "https://stonevault.com/"
+  },
+  {
+    title: "BMP Logic",
+    image: "/images/clients/bmplogic.png",
+    link: "https://www.bmplogic.net/"
+  },
+  {
+    title: "Dartbid",
+    image: "/images/clients/dartbid.png",
+    link: "https://dartbid.com/"
+  }
+]

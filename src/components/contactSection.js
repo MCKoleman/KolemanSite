@@ -1,5 +1,5 @@
 import React from "react";
-import { email as contactEmail, github, githubLink, discord, discordLink, phone, contactBG } from "../data/contactInfo";
+import { email as contactEmail, github, githubLink, phone, contactBG } from "../data/contactInfo";
 
 export default function ContactSection() {
   const [name, setName] = React.useState("");
@@ -65,14 +65,6 @@ export default function ContactSection() {
               </li>
             </ul>
             <ul className="grid grid-cols-1 sm:grid-rows-2 md:w-1/3 w-1/2 px-6 py-0 mt-4 flex justify-center items-center">
-              <li className="w-full">
-                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                  DISCORD
-                </h2>
-                <a className="text-indigo-400 leading-relaxed" href={discordLink}>
-                  {discord}
-                </a>
-              </li>
               <li className="w-full">
                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                   GITHUB
