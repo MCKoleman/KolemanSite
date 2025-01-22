@@ -353,9 +353,4 @@ export const clients = [
     image: "/images/clients/bmplogic.png",
     link: "https://www.bmplogic.net/"
   },
-  {
-    title: "Dartbid",
-    image: "/images/clients/dartbid.png",
-    link: "https://dartbid.com/"
-  }
 ]
