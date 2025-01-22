@@ -4,4 +4,4 @@ export const github = "MCKoleman";
 export const githubLink = "https://github.com/MCKoleman";
 export const discord = "MCKoleman#1952";
 export const discordLink = "https://discordapp.com/users/MCKoleman#1952";
-export const contactBG = "./images/kolemanSite.png";
+export const contactBG = "/images/kolemanSite.png";

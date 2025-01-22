@@ -2,7 +2,7 @@ import { CheckBadgeIcon, CpuChipIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { skills } from "../data/data";
 
-export default function SkillsPage() {
+export default function SkillsSection() {
   return (
     <section id="skills">
       <ul className="container px-5 py-10 mx-auto">
@@ -16,7 +16,7 @@ export default function SkillsPage() {
             These are some of my strongest skills that I am able to use in a professional capacity.
           </p>
         </li>
-        <li className="flex flex-wrap lg:w-4/6 sm:mx-auto sm:mb-2 -mx-2">
+        <li className="flex flex-wrap lg:w-4/6 sm:mx-auto sm:mb-2">
           {skills.map((skill) => (
             <div key={skill} className="p-2 sm:w-1/3 w-full">
               <div className="bg-gray-800 rounded flex p-4 h-full items-center">
