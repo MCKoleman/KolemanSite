@@ -2,14 +2,13 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar.js';
 
-import Footer from './components/footer.js';
 import ContactSection from './components/contactSection.js';
 import HomePage from './components/homePage.js';
 import ProjectsPage from './components/projectsPage.js';
 import ProjectHome from './components/projectHome.js';
 
 function App() {
-  const [dimensions, setDimensions] = React.useState({
+  const [, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth
   });

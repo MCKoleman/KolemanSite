@@ -1,137 +1,55 @@
 import React from "react";
-import { email as contactEmail, github, githubLink, phone, contactBG } from "../data/contactInfo";
+import { email as contactEmail, github, githubLink, linkedin, linkedinLink, phone } from "../data/contactInfo";
+import { AtSymbolIcon } from "@heroicons/react/24/solid";
 
 export default function ContactSection() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [messageContent, setMessage] = React.useState("");
-
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    //console.log(JSON.stringify({name, email, messageContent}));
-    fetch("https://us-central1-kolemansite.cloudfunctions.net/email", {
-      method: "POST",
-      mode: "no-cors",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({name, email, messageContent})
-    })
-      .then((response) => {
-        console.log(response);
-      })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
-
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex md:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 w-full bg-gray-900 rounded-lg overflow-hidden md:mr-10 p-10 flex items-end justify-start relative">
-          <a href="/#about">
-            <img alt="Contact Background"
-              width="100%"
-              height="100%"
-              className="sm:block hidden border-4 border-gray-800 bg-gray-900 rounded-xl absolute inset-0 w-full"
-              src={contactBG}/>
-          </a>
-          <div className="grid grid-cols-2 grid-rows-1 border-4 border-gray-800 bg-gray-900 xl:w-2/3 w-full relative py-6 rounded-lg shadow-lg">
-            <ul className="grid grid-cols-1 sm:grid-rows-2 md:w-2/3 w-1/2 px-6 py-0 mt-4 flex justify-center items-center">
-              <li className="w-full">
-                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                  EMAIL
-                </h2>
-                <a className="text-indigo-400 leading-relaxed"
-                  href={"mailto:" + contactEmail}>
-                  {contactEmail}
-                </a>
-              </li>
-              <li className="w-full">
-                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                  PHONE
-                </h2>
-                <p className="text-indigo-400 leading-relaxed">{phone}</p>
-              </li>
-            </ul>
-            <ul className="grid grid-cols-1 sm:grid-rows-2 md:w-1/3 w-1/2 px-6 py-0 mt-4 flex justify-center items-center">
-              <li className="w-full">
-                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                  GITHUB
-                </h2>
-                <a className="text-indigo-400 leading-relaxed" href={githubLink}>
-                  {github}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <form
-          netlify="true"
-          name="contact"
-          onSubmit={handleSubmit}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+      <ul className="container px-5 py-10 mx-auto">
+        <li className="text-center mb-5">
+          <AtSymbolIcon className="w-10 inline-block mb-4" />
+          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
             Contact Me
-          </h2>
-          <p className="leading-relaxed mb-5">
-            If you would be interested in working with me or would like to reach out to me for any reason,
-            feel free to contact me through this form.
+          </h1>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            If you are interested in working with me, feel free to contact me!
           </p>
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
-          <button
-            type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Submit
-          </button>
-        </form>
-      </div>
+        </li>
+        <li className="flex flex-wrap w-full sm:w-1/2 sm:mx-auto sm:mb-2">
+          <a className="min-h-max p-2 lg:w-1/2 md:w-1/2 w-full" href={"mailto:" + contactEmail}>
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+              <span className="title-font font-medium text-white">
+                <p className="text-md text-green-600">EMAIL</p>
+                <p className="text-indigo-400 leading-relaxed text-sm">{contactEmail}</p>
+              </span>
+            </div>
+          </a>
+          <a className="min-h-max p-2 lg:w-1/2 md:w-1/2 w-full" href={"tel:" + phone.replace(/[^0-9+]/g, "")}>
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+              <span className="title-font font-medium text-white">
+                <p className="text-md text-green-600">PHONE</p>
+                <p className="text-indigo-400 leading-relaxed text-sm">{phone}</p>
+              </span>
+            </div>
+          </a>
+          <a className="min-h-max p-2 lg:w-1/2 md:w-1/2 w-full" href={githubLink}>
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+              <span className="title-font font-medium text-white">
+                <p className="text-md text-green-600">GITHUB</p>
+                <p className="text-indigo-400 leading-relaxed text-sm">{github}</p>
+              </span>
+            </div>
+          </a>
+          <a className="min-h-max p-2 lg:w-1/2 md:w-1/2 w-full" href={linkedinLink}>
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+              <span className="title-font font-medium text-white">
+                <p className="text-md text-green-600">LINKEDIN</p>
+                <p className="text-indigo-400 leading-relaxed text-sm">{linkedin}</p>
+              </span>
+            </div>
+          </a>
+        </li>
+      </ul>
     </section>
   );
 }
