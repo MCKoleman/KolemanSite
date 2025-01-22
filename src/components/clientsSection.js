@@ -6,7 +6,7 @@ export default function ClientsSection() {
   return (
     <section id="clients">
       <ul className="container px-5 py-10 mx-auto">
-        <li className="text-center">
+        <li className="text-center mb-20">
           <BriefcaseIcon className="w-10 inline-block mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
             Clients I've Worked With
